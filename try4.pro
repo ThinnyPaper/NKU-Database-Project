@@ -12,8 +12,13 @@ SOURCES += \
     airlinenew.cpp \
     airload.cpp \
     airmanager.cpp \
+    airupdate.cpp \
     choose.cpp \
     collect.cpp \
+    landload.cpp \
+    landmanager.cpp \
+    landtruck.cpp \
+    loadedit.cpp \
     main.cpp \
     mainwindow.cpp \
     postman.cpp \
@@ -24,9 +29,14 @@ HEADERS += \
     airlinenew.h \
     airload.h \
     airmanager.h \
+    airupdate.h \
     choose.h \
     collect.h \
     dbconnect.h \
+    landload.h \
+    landmanager.h \
+    landtruck.h \
+    loadedit.h \
     mainwindow.h \
     postman.h \
     receive.h \
@@ -36,8 +46,13 @@ FORMS += \
     airlinenew.ui \
     airload.ui \
     airmanager.ui \
+    airupdate.ui \
     choose.ui \
     collect.ui \
+    landload.ui \
+    landmanager.ui \
+    landtruck.ui \
+    loadedit.ui \
     mainwindow.ui \
     postman.ui \
     receive.ui \
