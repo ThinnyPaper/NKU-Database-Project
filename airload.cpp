@@ -21,7 +21,7 @@ void airload::on_pushButton_clicked()
     QString airnum=ui->lineEdit->text();
     QString order=ui->lineEdit_2->text();
 
-    QString cmd=QString("insert into `空运订单` values('%1','%2')").arg(airnum).arg(order);
+    QString cmd=QString("insert into `空运订单` values('%1','%2')").arg(order).arg(airnum);
 
     QSqlQuery qry(*aldb);
 

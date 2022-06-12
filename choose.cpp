@@ -101,26 +101,6 @@ void choose::on_pushButton_6_clicked()
         }
     }
 
-    //中转站管理
-    //完成中转站删除联动
-    else if(ui->radioButton_4->isChecked()){
-        QString acc=ui->lineEdit->text();
-        QString pw=ui->lineEdit_2->text();
-        QString checkpw="select `密码` from `中转站管理账号` where `账号`= '"+acc+"'";
-        QSqlQuery qry(checkpw,*cdb);
-        qry.first();
-        QString truepw = qry.value(0).toString();
-
-        if(truepw!=""&&pw==truepw){
-
-            landmanager* lm=new landmanager(nullptr,cdb);
-            lm->show();
-            this->~choose();
-        }
-        else{
-            QMessageBox::information(this,"密码错误","账号或密码错误，请重试  ");
-        }
-    }
 
 
     else{
@@ -133,4 +113,5 @@ void choose::on_radioButton_2_clicked()
 {
 
 }
+
 
