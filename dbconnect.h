@@ -11,7 +11,7 @@ void mydbconnect(QSqlDatabase &x){
     db.setPort(3306);
     db.setDatabaseName("localmysql");
     db.setUserName("root");
-    db.setPassword("yangzhe2001913");
+    db.setPassword("yourpassword");//运行前记得改密码！！
     bool ok = db.open();
 
     if (ok){
