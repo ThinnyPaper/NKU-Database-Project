@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>landmanager</class>
- <widget class="QWidget" name="landmanager">
+ <class>zzzmanager</class>
+ <widget class="QWidget" name="zzzmanager">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>656</width>
-    <height>405</height>
+    <width>756</width>
+    <height>475</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,20 +16,20 @@
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>361</width>
-     <height>371</height>
+     <x>30</x>
+     <y>30</y>
+     <width>501</width>
+     <height>411</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>120</y>
-     <width>121</width>
-     <height>41</height>
+     <x>590</x>
+     <y>150</y>
+     <width>101</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
@@ -38,33 +38,25 @@
     </font>
    </property>
    <property name="text">
-    <string>新增线路</string>
+    <string>新增</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>180</y>
-     <width>121</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>删除已选中线路</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>460</x>
+     <x>590</x>
      <y>240</y>
-     <width>121</width>
-     <height>41</height>
+     <width>101</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>编辑该线路车次</string>
+    <string>删除</string>
    </property>
   </widget>
  </widget>

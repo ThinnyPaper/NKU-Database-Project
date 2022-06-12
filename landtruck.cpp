@@ -30,7 +30,7 @@ landtruck::~landtruck()
 
 void landtruck::on_pushButton_clicked()
 {
-    //新增
+    //新增车次
     if(ui->pushButton->text()=="新增车次"){
 
         ui->pushButton->setText("提交新增");
@@ -38,8 +38,6 @@ void landtruck::on_pushButton_clicked()
         //添加一行
         model->insertRow(row);
         model->setData(model->index(row, 0), lnum);
-
-
 
     }
     else if(ui->pushButton->text()=="提交新增"){
@@ -50,7 +48,7 @@ void landtruck::on_pushButton_clicked()
             QMessageBox::information(this,"成功","新增车次成功");
         }
         else{
-            QMessageBox::information(this,"错误","中转站输入有误，请重新输入");
+            QMessageBox::information(this,"错误","输入有误，请重新输入");
         }
     }
 }
@@ -87,7 +85,7 @@ void landtruck::on_pushButton_4_clicked()
 {
     //到达
     QModelIndex i=model->index(ui->tableView->currentIndex().row(),3);
-    if(model->data(i,0).toString()==""){//有问题
+    if(model->data(i,0).toString()==""){
         QMessageBox::information(this,"失败","货车尚未出发");
     }
     else{

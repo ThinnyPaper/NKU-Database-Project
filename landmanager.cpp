@@ -52,7 +52,7 @@ void landmanager::on_pushButton_2_clicked()
     int curRow = ui->tableView->currentIndex().row();
     //删除该行
 
-    int ret = QMessageBox::warning(this, tr("删除当前行"), tr("你确定要删除该行吗"), QMessageBox::Yes | QMessageBox::No);
+    int ret = QMessageBox::warning(this, tr("删除"), tr("你确定要删除当前线路吗？"), QMessageBox::Yes | QMessageBox::No);
     if (ret == QMessageBox::Yes)
     {
        //删除该行 提交到数据库
@@ -75,4 +75,8 @@ void landmanager::on_pushButton_3_clicked()
     landtruck * lt=new landtruck(nullptr,ldb,linenum);
     lt->show();
 }
+
+
+
+
 

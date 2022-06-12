@@ -23,7 +23,8 @@ SOURCES += \
     mainwindow.cpp \
     postman.cpp \
     receive.cpp \
-    send.cpp
+    send.cpp \
+    zzzmanager.cpp
 
 HEADERS += \
     airlinenew.h \
@@ -40,7 +41,8 @@ HEADERS += \
     mainwindow.h \
     postman.h \
     receive.h \
-    send.h
+    send.h \
+    zzzmanager.h
 
 FORMS += \
     airlinenew.ui \
@@ -56,7 +58,8 @@ FORMS += \
     mainwindow.ui \
     postman.ui \
     receive.ui \
-    send.ui
+    send.ui \
+    zzzmanager.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
